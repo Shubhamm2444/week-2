@@ -1,0 +1,22 @@
+Example of JSX in a React Component:
+
+import React from 'react';
+
+function HelloMessage(props) {
+  const name = 'Alice'; // Assuming a name variable
+
+  return (
+    <div>
+      <h1>Hello, {name}!</h1>
+      <p>Welcome to React!</p>
+    </div>
+  );
+}
+
+export default HelloMessage;
+
+//Explanation:
+This code defines a React component called HelloMessage.
+It uses JSX within the return statement to create the UI structure.
+The <h1>Hello, {name}!</h1> line demonstrates how an expression ({name}) is evaluated within curly braces and its value is interpolated into the string.
+The entire JSX code is translated into JavaScript function calls during compilation. React uses this information to render the UI.
