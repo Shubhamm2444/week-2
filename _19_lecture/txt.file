@@ -1,0 +1,20 @@
+# In React, you can listen to events triggered by user interactions or system events using event handlers. These handlers are functions defined within your components that get executed when a specific event occurs.
+
+Here's a breakdown of how to handle events in React:
+
+1. Event Handlers:
+Event handlers are JavaScript functions within your React components.
+They typically receive an event object as an argument, containing details about the event (e.g., type of event, target element, etc.).
+You can access information from the event object and perform actions based on the event.
+
+2. Attaching Event Handlers:
+Event handlers are attached to HTML elements within your JSX using the onClick, onChange, onSubmit, or other event attributes.
+You don't directly call the event handler function within the attribute value.
+Instead, you pass a reference to the function using either an anonymous function or a predefined function within your component.
+
+3. Additional Notes:
+You can use the preventDefault method on the event object in event handlers to prevent default browser behavior (e.g., form submissions triggering page reloads).
+React also supports synthetic events, which provide a consistent event system across different browsers.
+There are event handlers for various events, including onMouseOver, onFocus, onChange, onSubmit, and more.
+
+* By utilizing event handlers, you can make your React components interactive and respond to user actions or system events effectively. This allows you to create dynamic and engaging web applications.
