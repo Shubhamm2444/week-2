@@ -1,0 +1,31 @@
+* Example: Button with Event Handling and Styling:
+
+button {
+  background-color: #4CAF50; /* Green background color */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41; /* Green hover color */
+}
+
+
+//Explanation:
+styles.css defines styles for the button element.
+MyComponent.js imports the CSS file and defines the handleClick function for the button click.
+The button JSX includes the onClick handler and an inline style for a red color (demonstrating both options).
+
+*  Key Points:
+CSS styles are typically applied to components using classes or selectors.
+Inline styles can be used for quick styling or dynamic changes based on state or props.
+Consider modularity and maintainability by keeping component styles separate (e.g., in CSS files) for larger projects.
+
+By effectively combining event handling in React components with CSS styling, you can create interactive UIs with the desired visual appearance.
