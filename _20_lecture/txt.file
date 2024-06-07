@@ -1,0 +1,26 @@
+# Creating Functional Components in React with JSX, JS, and CSS
+Functional components are the fundamental building blocks of user interfaces (UIs) in React applications. They are reusable units of code written in JavaScript that define how a part of your UI should look and behave. Here's a breakdown of creating functional components using JSX (JavaScript XML), JavaScript, and CSS:
+
+1: JSX (JavaScript XML):
+JSX allows you to write HTML-like structures within your JavaScript code.
+It's a syntactic sugar that gets transformed into regular JavaScript function calls during compilation.
+JSX provides a familiar and intuitive way to define the UI structure within your components.
+
+2: JavaScript (JS):
+Functional components are typically defined as JavaScript functions.
+These functions take optional arguments called "props" (properties) that can be passed from parent components to customize the functionality or appearance.
+Within the function, you can use JSX to define the UI structure and logic related to the component.
+You might also use JavaScript for state management (using the useState hook) or event handling (using event handlers like onClick).
+
+3: CSS:
+CSS (Cascading Style Sheets) is used to style the visual appearance of your React components.
+You can create separate CSS files to define styles for your components.
+You can use selectors (e.g., class names or element types) in your CSS to target specific elements within your JSX code.
+Alternatively, you can apply inline styles directly within your JSX using the style attribute (less preferred for larger projects).
+
+4: Key Points:
+Functional components are reusable and stateless.
+JSX provides a convenient way to structure your UI.
+CSS helps style the visual elements.
+Separate your styling code (CSS) for better maintainability.
+By effectively combining JSX, JavaScript (including state and event handling), and CSS, you can create engaging and interactive UIs using React functional components.
