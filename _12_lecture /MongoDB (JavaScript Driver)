@@ -1,0 +1,27 @@
+const MongoClient = require('mongodb').MongoClient;
+
+const uri = "mongodb://localhost:27017";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+
+client.connect((err, db) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+
+  const myDB = db.db("myDatabase"); // Replace "myDatabase" with your actual database name
+
+  // Example: Insert a document into a collection
+  const user = { name: "John Doe", email: "john.doe@example.com" };
+  myDB.collection("users").insertOne(user, (err, result) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log("Document inserted:", result.insertedId);
+    }
+  });
+
+  // ... (other database operations)
+
+  client.close();
+});
